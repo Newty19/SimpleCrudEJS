@@ -1,7 +1,7 @@
 const express = require('express'); //Importamos el paquete de express
 const app = express(); // Declaramos en una variable express para ser utilizado
 
-const port = 3000; //Usamos el puerto 3000
+const port = process.env.port || 3000; //Usamos el puerto 3000
 
 app.set('view engine', 'ejs');
 app.set('views',__dirname + '/views');
